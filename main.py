@@ -1,4 +1,4 @@
-from math_func import add
+from math_func import add, mul, div
 
 def main():
     data_1 = int(input("masukkan input 1:"))
@@ -7,6 +7,12 @@ def main():
 
     if operator == "+":
         result = add(data_1,data_2)
+    
+    if operator == "*":
+        result = mul(data_1,data_2)
+    
+    if operator == "/":
+        result = div(data_1,data_2)
 
     print("{}{}{}={}".format(data_1,operator,data_2,result))
 
